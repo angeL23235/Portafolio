@@ -16,8 +16,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rubik+Gemstones&display=swap" rel="stylesheet">
   <link href="https://fonts.cdnfonts.com/css/ninja-naruto" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/anime-ace" rel="stylesheet">
   <!-- TITULO -->
-  <title>PORTAFOLIO MIGUEL ANGEL LONDOÑO</title>
+  <title>PORTAFOLIO MIGUEL</title>
   <!-- FAVICON -->
   <link rel="icon" type="image/x-icon" href="img/d4d1f005a99633494b0e9dd2621e055c.png">
 </head>
@@ -26,28 +27,29 @@
   <!-- barra de navegacion -->
   <nav class="navbar navbar-expand-md  navbar-light">
     <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
+      <button class="navbar-toggler burguer" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
         aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon "></span>
       </button>
       <div class="collapse navbar-collapse" id="navbar-toggler">
         <a class="navbar-brand" href="#">
-          <img class=" rounded-circle"  src="img/d4d1f005a99633494b0e9dd2621e055c.png" alt="logo web" height="100px" width="110px" ">
+          <img class=" rounded-circle" src="img/d4d1f005a99633494b0e9dd2621e055c.png" alt="logo web" height="100px"
+            width="110px" ">
         </a>
-        <ul class="navbar-nav d-flex justify-content-center align-items-center ">
-          <li class="nav-item">
-            <a class="nav-link barra" aria-current="page" href="#">Sobre mi</a>
+        <ul class=" navbar-nav d-flex justify-content-center align-items-center ">
+          <li class=" nav-item">
+          <a class="nav-link barra" aria-current="page" href="#sobre-mi">Sobre mi</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link barra" href="#">Proyectos</a>
+            <a class="nav-link barra" href="#proyectos">Proyectos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link barra" aria-disabled="true">Testimonios</a>
+            <a class="nav-link barra" aria-disabled="true" href="#testimonios">Testimonios</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link barra" aria-disabled="true">Contactos</a>
+            <a class="nav-link barra" aria-disabled="true" href="#contactos">Contactos</a>
           </li>
-        </ul>
+          </ul>
       </div>
     </div>
   </nav>
@@ -56,7 +58,7 @@
     <!-- Esta sera la variacion de css pero en boostrap -->
     <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
       <img class="hero-desarrollador" src="img/IMG-20240216-WA0007.jpg" alt="foto de miguel">
-      <h1>Hola soy Miguel Angel</h1>
+      <h1>Hola soy Miguel</h1>
       <h2>Soy programador Jr, desarrollo webs y manejo bases de datos.</h2>
     </div>
     <div class="hero-inferior">
@@ -64,8 +66,8 @@
     </div>
   </section>
 
-  <!-- BOBRE MI -->
-  <section class="sobre-mi seccion-oscura">
+  <!-- SOBRE MI -->
+  <section id="sobre-mi" class="sobre-mi seccion-oscura">
     <div class="contenedor">
       <h2 class="seccion-titulo">Conoceme</h2>
       <p class="seccion-texto">Como programador junior, me apasiona resolver problemas y aprender nuevas habilidades
@@ -82,10 +84,11 @@
         <div class="columna col-12 col-md-4">
           <i class="bi bi-laptop"></i>
           <p class="experiencia-titulo">Desarrollo web</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam posuere fermentum tempor.
-            Donec vel pellentesque magna. Proin quis arcu feugiat, tempor nisi ut, vulputate eros. Sed rhoncus semper
-            consequat. Sed eu tristique odio. Suspendisse elementum nulla nec dui consectetur, sed viverra ex tempus.
-            Integer ac tortor sit amet nisi maximus euismod vitae a urna.</p>
+          <p>Como programador junior, he contribuido al desarrollo de aplicaciones web utilizando HTML, CSS, Python,
+            MySQL y PHP. He trabajado en equipos ágiles, implementando diseños responsivos y optimizando el rendimiento
+            mediante consultas eficientes a bases de datos. Me apasiona resolver problemas complejos y aprender
+            continuamente nuevas tecnologías para mejorar la experiencia del usuario y la funcionalidad de los
+            proyectos.</p>
           <div class="badges-contenedor">
             <span class="badge text-bg-info">HTML</span>
             <span class="badge text-bg-info">CSS</span>
@@ -96,15 +99,16 @@
         </div>
         <div class="columna col-12 col-md-4">
           <i class="bi bi-laptop"></i>
-          <p class="experiencia-titulo">Articulos</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam posuere fermentum tempor.
-            Donec vel pellentesque magna. Proin quis arcu feugiat, tempor nisi ut, vulputate eros. Sed rhoncus semper
-            consequat. Sed eu tristique odio. Suspendisse elementum nulla nec dui consectetur, sed viverra ex tempus.
-            Integer ac tortor sit amet nisi maximus euismod vitae a urna.</p>
+          <p class="experiencia-titulo">Descripción</p>
+          <p>En mi camino como desarrollador junior, he explorado y compartido mi pasión por la programación a través de
+            artículos. Mi objetivo es transmitir conocimientos y experiencias relevantes para la comunidad de desarrollo
+            web. Mis publicaciones abarcan temas que van desde las mejores prácticas en HTML y CSS, hasta consejos para
+            optimizar consultas en bases de datos MySQL y estrategias efectivas con PHP. Cada artículo refleja mi
+            compromiso con el aprendizaje continuo y la mejora constante en el mundo del desarrollo web.</p>
           <div class="badges-contenedor">
             <span class="badge text-bg-info">Escribir</span>
             <span class="badge text-bg-info">Editar</span>
-            <span class="badge text-bg-info">Blogs</span>
+            <span class="badge text-bg-info">Solucionar</span>
           </div>
 
         </div>
@@ -118,15 +122,14 @@
             <strong>2025 | </strong>Titulo media tecnica programador de software
           </p>
           <div class="badges-contenedor">
-            <span class="badge text-bg-info">Escribir</span>
-            <span class="badge text-bg-info">Editar</span>
-            <span class="badge text-bg-info">Blogs</span>
+            <span class="badge text-bg-info">Bachiller</span>
+            <span class="badge text-bg-info">Tecnico</span>
           </div>
 
         </div>
   </section>
   <!-- Proyectos -->
-  <section class="proyectos seccion-clara d-flexx flex-column">
+  <section id="proyectos" class="proyectos seccion-clara d-flexx flex-column">
     <h2 class="seccion-titulo texto-negro">Mis Proyectos</h2>
     <h3 class="seccion-descripcion">Estos son algunos de mis proyectos</h3>
     <!-- Galeria de proyectos -->
@@ -225,9 +228,9 @@
       </button>
     </a>
   </section>
-  
+
   <!-- Testimonios -->
-   <section class="testimonios seccion-clara">
+  <section id="testimonios" class="testimonios seccion-clara">
     <h2 class="seccion-titulo">Testimonios</h2>
     <h3 class="seccion-descripcion">Estos son algunos testimonios de mis compañeros</h3>
     <!-- Carrusel -->
@@ -236,7 +239,8 @@
         <div class="carousel-item active">
           <div class="container">
             <img class="testimonio-imagen rounded-circle" src="img/testi1.webp" alt="testimonio 1">
-            <p class="testimonio-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto deserunt corrupti debitis! Doloribus facilis soluta magnam fugiat iste, nostrum, ab error praesentium distinctio quam sed magni sequi tempore eligendi! Dignissimos.</p>
+            <p class="testimonio-texto">Estoy satisfecho con su servicio front-end, sus paginas y su estilo de trabajo
+              dinamico me parecen genial</p>
             <div class="testimonio-info">
               <p class="cliente">Alejandro</p>
               <p class="cargo">Asesor de proyectos en Desarroloweb</p>
@@ -244,10 +248,25 @@
           </div>
         </div>
         <div class="carousel-item">
-          <img src="img/testi2.webp" class="d-block w-100" alt="...">
+          <div class="container">
+            <img class="testimonio-imagen rounded-circle" src="img/testi2.webp" alt="testimonio 2">
+            <p class="testimonio-texto">Trabaja bien, aprende rapido y es una gran ayuda para hallar soluciones </p>
+            <div class="testimonio-info">
+              <p class="cliente">Rosmira</p>
+              <p class="cargo">Docente y Programadora Front-end</p>
+            </div>
+          </div>
         </div>
         <div class="carousel-item">
-          <img src="img/testi3.webp" class="d-block w-100" alt="...">
+          <div class="container">
+            <img class="testimonio-imagen rounded-circle" src="img/testi3.webp" alt="testimonio 3">
+            <p class="testimonio-texto">Me sorprende el como puede sacar adelante un proyecto acoplandose a sus
+              compañeros </p>
+            <div class="testimonio-info">
+              <p class="cliente">Jaime</p>
+              <p class="cargo">Gerente de empresa</p>
+            </div>
+          </div>
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#testimonios-c" data-bs-slide="prev">
@@ -259,9 +278,51 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-   </section>
+  </section>
+  <!-- Contacto -->
+  <section id="contactos" class="contacto seccion-oscura">
+    <div class="container">
+      <div class="container rectangulo text-center d-flex justify-content-evenly">
+        <div class="row">
+          <div class="col-12 col-md-4 seccion-titulo">
+            ¡Hablemos!
+          </div>
+          <div class="col-12 col-md-4 descripcion">
+            ¡Hagamos que tu proyecto despegue! Contáctame hoy mismo para comenzar a trabajar juntos.
+          </div>
+          <div class="col-12 col-md-4">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=maximilianogomezarroyave@gmail.com">
+              <button type="button">
+                Contacto
+                <i class="bi bi-envelope-check-fill"></i>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- FOOTER -->
+  <footer class="seccion-oscura d-flex flex-column justify-content-center align-items-center">
+    <img class="footer-logo" src="img/d4d1f005a99633494b0e9dd2621e055c.png" alt="logo portafolio">
+    <p class="footer-texto text-center">Un conocimiento mas cada dia. <br>Hagamos esto realidad</p>
+    <div class="iconos-redes d-flex flex-wrap align-items-center justify-content-center">
+      <a href="https://wa.link/73n96r" target="_blank">
+        <i class="bi bi-whatsapp"></i>
+      </a>
+      <a href="https://github.com/angeL23235" target="_blank">
+        <i class="bi bi-github"></i>
+      </a>
+      <a href="https://www.instagram.com/angel_23235/" target="_blank">
+        <i class="bi bi-instagram"></i>
+      </a>
+    </div>
+    <div class="derechos-autor">Creado por Miguel Londoño (2024) &#169; </div>
+  </footer>
 
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
 </html>

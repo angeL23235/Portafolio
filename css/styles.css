@@ -3,53 +3,119 @@
     padding: 1rem;
     background-color: #1b1b32;
 }
-.barra{
+
+.barra {
     color: white;
 }
+
 .navbar-collapse {
     justify-content: space-between;
     align-items: center;
 }
+
+.burguer {
+    color: white;
+    background-color: white;
+}
+
+/* contacto */
+.contacto .container {
+    max-width: 1100px;
+    min-height: 200px;
+    padding: 20px;
+}
+
+.contacto .rectangulo {
+    margin-top: -5rem;
+    background-color: rgb(13, 110, 253);
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px 2px white;
+}
+
+.contacto .row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.contacto .descripcion {
+    color: white;
+    font-size: 1.2rem;
+}
+
+.contacto button {
+    color: white;
+    font-weight: bold;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 1.25em 2em;
+    margin: 10px;
+    border-radius: 100px;
+    transition: all 0.2s ease-in-out;
+}
+
+.contacto button i {
+    color: white;
+    font-size: 1.3rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.contacto button:hover {
+    background-color: white;
+    color: black;
+}
+
+.contacto button:hover i {
+    color: black;
+}
+
 /* testimonios */
-.testimonios{
+.testimonios {
     padding: 40px 40px 80px 40px;
+    background-color: aliceblue;
 
 }
-.testimonios .carousel{
-max-width: 800px;
+
+.testimonios .carousel {
+    max-width: 800px;
 }
 
-.carousel-item{
+.carousel-item {
     height: 500px;
 }
-.testimonio-imagen{
+
+.testimonio-imagen {
     height: 200px;
     width: 200px;
     margin: 10px, 10px, 20px, 10px;
 }
-.testimonio-texto{
+
+.testimonio-texto {
     max-width: 80%;
     font-size: 100%;
     text-align: center;
     font-weight: bold;
 }
-.testimonio-info{
+
+.testimonio-info {
     font-weight: bold;
     text-align: center;
 }
-.testimonio-info p{
+
+.testimonio-info p {
     margin-bottom: 0;
 }
 
-.testimonio-footer .cliente{
+.testimonio-footer .cliente {
     font-size: 1.2rem;
 }
 
-.testimonio-info .cargo{
+.testimonio-info .cargo {
     font-size: 0.9rem;
     color: #656060;
 }
-.carousel-item .container{
+
+.carousel-item .container {
     width: 100%;
     height: 100%;
     display: flex;
@@ -57,6 +123,7 @@ max-width: 800px;
     align-items: center;
     justify-content: center;
 }
+
 /* Estilos generales */
 section {
     display: flex;
@@ -84,6 +151,7 @@ section {
 /* Proyectos */
 .proyectos {
     padding: 40px;
+    background-color: aliceblue;
 }
 
 .proyectos img {
@@ -140,6 +208,7 @@ section {
 .proyecto-contenedor {
     padding-top: 60px;
     margin-bottom: 40px;
+    background-color: aliceblue;
 }
 
 .texto-negro {
@@ -212,6 +281,7 @@ h1 {
 /* Experience */
 .experience {
     padding: 40px 40px 60px;
+    background-color: aliceblue;
 }
 
 .experience i {
@@ -220,6 +290,12 @@ h1 {
     background-color: red;
     padding: 8px 19px;
     border-radius: 50%;
+    transition: all 0.2s ease-in;
+}
+
+.experience .columna:hover i {
+    background-color: black;
+    color: white;
 }
 
 .experiencia-titulo {
@@ -243,8 +319,9 @@ h1 {
 
 .experience .columna:hover {
     color: white;
-    background-color: aqua;
+    background-color: red;
 }
+
 
 /* BADGE */
 .badge-contenedor {
@@ -255,6 +332,61 @@ h1 {
 
 .badge {
     margin: 5px;
+}
+
+/* FOOTER */
+.footer {
+    min-height: 500px;
+
+}
+
+.footer-logo {
+    height: 80px;
+    width: 80px;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.footer-texto {
+    font-size: 1.5rem;
+    padding: 20px;
+    margin-bottom: 30px;
+    font-family: 'Anime Ace', sans-serif;
+}
+
+.iconos-redes a {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    margin: 10px;
+    border: 2px solid white;
+    border-radius: 50%;
+    transition: all 0.2s ease-in;
+    font-size: 25px;
+}
+
+.iconos-redes i {
+    color: white;
+    font-size: 1.5rem;
+    transition: all 0.2s ease-in;
+}
+
+.iconos-redes a:hover {
+    background-color: white;
+    border: 2px solid rgb(13, 110, 253);
+}
+
+.iconos-redes a:hover i {
+    color: black;
+}
+
+.derechos-autor {
+    font-size: 15px;
+    color: #aeaeae;
+    padding: 20px;
 }
 
 /* RESPONSIVE */
@@ -277,5 +409,16 @@ h1 {
 
     .overlay i {
         font-size: 40px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .testimonio-imagen {
+        height: 120px;
+        width: 120px;
+    }
+
+    .testimonio-texto {
+        font-size: 18px;
     }
 }
