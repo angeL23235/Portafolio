@@ -1,0 +1,281 @@
+/* barra de navegacion */
+.navbar {
+    padding: 1rem;
+    background-color: #1b1b32;
+}
+.barra{
+    color: white;
+}
+.navbar-collapse {
+    justify-content: space-between;
+    align-items: center;
+}
+/* testimonios */
+.testimonios{
+    padding: 40px 40px 80px 40px;
+
+}
+.testimonios .carousel{
+max-width: 800px;
+}
+
+.carousel-item{
+    height: 500px;
+}
+.testimonio-imagen{
+    height: 200px;
+    width: 200px;
+    margin: 10px, 10px, 20px, 10px;
+}
+.testimonio-texto{
+    max-width: 80%;
+    font-size: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+.testimonio-info{
+    font-weight: bold;
+    text-align: center;
+}
+.testimonio-info p{
+    margin-bottom: 0;
+}
+
+.testimonio-footer .cliente{
+    font-size: 1.2rem;
+}
+
+.testimonio-info .cargo{
+    font-size: 0.9rem;
+    color: #656060;
+}
+.carousel-item .container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/* Estilos generales */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.seccion-titulo {
+    font-size: 2rem;
+    padding: 15px 0;
+    font-family: 'Ninja Naruto', sans-serif;
+}
+
+.seccion-descripcion {
+    font-size: 1.2rem;
+    color: #584e4e;
+}
+
+.seccion-texto {
+    font-size: 1.2rem;
+    padding: 0 10px;
+}
+
+/* Proyectos */
+.proyectos {
+    padding: 40px;
+}
+
+.proyectos img {
+    height: 100%;
+    width: 100%;
+    padding: 6px;
+    border-radius: 10px;
+    display: block;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.overlay {
+    transition: all 0.2s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.proyecto {
+    position: relative;
+}
+
+.overlay p {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.overlay .iconos-contenedor {
+    display: flex;
+
+}
+
+.overlay i {
+    color: black;
+    font-size: 60px;
+    margin: 10px;
+    text-align: center;
+}
+
+.proyecto:hover img {
+    opacity: 0.2;
+}
+
+.proyecto:hover .overlay {
+    opacity: 1;
+
+}
+
+.proyecto-contenedor {
+    padding-top: 60px;
+    margin-bottom: 40px;
+}
+
+.texto-negro {
+    color: black;
+}
+
+/* estilos titulos */
+h1 {
+    font-size: 2.5rem;
+    font-family: 'Ninja Naruto', sans-serif;
+}
+
+.hero-principal h2 {
+    font-family: 'Ninja Naruto', sans-serif;
+}
+
+.seccion-oscura {
+    background-color: #1b1b32;
+    color: white;
+
+}
+
+.section-light {
+    color: black;
+    background-color: aliceblue;
+}
+
+/* section hero */
+.hero {
+    background-color: aliceblue;
+    min-height: 450px;
+    text-align: center;
+
+}
+
+.btn-info {
+    font-size: 1.5rem;
+    margin: 20px;
+    font-weight: bold;
+}
+
+.hero-principal h2 {
+    font-size: 1.5rem;
+    color: black;
+}
+
+.hero-principal {
+    padding: 3rem;
+}
+
+.hero-desarrollador {
+    border-radius: 50%;
+    margin: 20px;
+    width: 200px;
+    height: 200px;
+}
+
+/* SOBRE MI */
+.sobre-mi {
+    height: 500px;
+    padding: 10px;
+}
+
+.sobre-mi .contenedor {
+    max-width: 600px;
+    text-align: center;
+
+}
+
+/* Experience */
+.experience {
+    padding: 40px 40px 60px;
+}
+
+.experience i {
+    font-size: 2.5rem;
+    color: black;
+    background-color: red;
+    padding: 8px 19px;
+    border-radius: 50%;
+}
+
+.experiencia-titulo {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.experience .columna {
+    padding: 20px;
+    border: 2px solid #f31e1e4d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: all 0.2s ease-in;
+    background-color: black;
+    color: white;
+}
+
+.experience .columna:hover {
+    color: white;
+    background-color: aqua;
+}
+
+/* BADGE */
+.badge-contenedor {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.badge {
+    margin: 5px;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 767px) {
+    .navbar-brand {
+        display: none;
+    }
+}
+
+@media screen and(min-width:700px) {
+    .hero-inferior-imagen {
+        max-width: 600px;
+    }
+}
+
+@MEDIA SCREEN and (max-width:400px) {
+    .overlay p {
+        font-size: 18px;
+    }
+
+    .overlay i {
+        font-size: 40px;
+    }
+}
